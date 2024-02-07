@@ -1,6 +1,21 @@
 ---
 import { Image } from "astro:assets";
 import Logo from "../assets/LOGO.png";
+
+const founders: founder[] = [
+  {
+    name: "Neville",
+    link: "nevillebrem",
+  },
+  {
+    name: "Marko",
+    link: "marking27",
+  },
+  {
+    name: "Eljas",
+    link: "elb4s",
+  },
+];
 ---
 
 <footer>
@@ -36,27 +51,37 @@ import Logo from "../assets/LOGO.png";
       <div class='my-2 md:my-0'>
         <h1 class='font-bold font-[Montserrat]'>Founders</h1>
         <ul class='font-semibold text-bmPink2'>
-          <li>
-            <a href='https://instagram.com/marking27'>Marko</a>
-          </li>
-          <li>
-            <a href='https://instagram.com/nevillebrem'>Neville</a>
-          </li>
-        </ul>
-      </div>
-      <div class='my-2 md:my-0'>
-        <h1 class='font-bold font-[Montserrat]'>Social</h1>
-        <ul class='font-semibold text-bmPink2'>
-          <li>
-            <a href='https://instagram.com/barmates_official'>Instagram</a>
-          </li>
+          {
+            founders.map((founder) => {
+              return (
+                <li>
+                  <a
+                    href={`https://instagram.com/${founder.link}`}
+                    target='_blank'
+                  >
+                    {founder.name}
+                  </a>
+                </li>
+              );
+            })
+          }
         </ul>
       </div>
     </div>
-  </div>
-  <div
-    class='text-center py-1 border-t border-bmPink4 font-bold font-[Montserrat] text-bmPink1'
-  >
-    <a href='https://github.com/nevthereal/barmates'>© Neville Brem 2023</a>
+    <div class='my-2 md:my-0'>
+      <h1 class='font-bold font-[Montserrat]'>Social</h1>
+      <ul class='font-semibold text-bmPink2'>
+        <li>
+          <a href='https://instagram.com/barmates_official' target='_blank'
+            >Instagram</a
+          >
+        </li>
+      </ul>
+    </div>
   </div>
 </footer>
+<div
+  class='text-center py-1 border-t border-bmPink4 font-bold font-[Montserrat] text-bmPink1'
+>
+  <a href='https://github.com/nevthereal/barmates'>© Neville Brem 2023</a>
+</div>
