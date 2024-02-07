@@ -1,3 +1,4 @@
+import Bar from "../assets/BAR.png";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -5,7 +6,7 @@ const Header = () => {
     <header className='flex justify-between p-2 md:p-4 bg-white uppercase font-black font-[Montserrat] h-[10dvh]'>
       <a href='/' className='w-[12dvh] my-auto'>
         <motion.img
-          src='../assets/BAR.png'
+          src={Bar.src}
           alt='bar'
           whileHover={{ scale: 1.1, rotate: 12 }}
           whileTap={{ scale: 0.9 }}
