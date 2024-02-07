@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+import Bar from "../assets/BAR.png";
+---
+
+<header
+  class='flex justify-center md:justify-between items-center px-8 bg-white uppercase font-black font-[Montserrat] h-[10dvh]'
+>
+  <a href='/' class='w-[20dvh] md:w-[12dvh]'>
+    <Image src={Bar} alt='bar' />
+  </a>
+  <div class='hidden md:flex text-2xl text-bmPink1 gap-2 md:gap-8'>
+    <a href='/catalogue'> Catalogue</a>
+    <a href='/mission'> Mission</a>
+  </div>
+  <div class='hidden md:block text-bmBlue1 text-3xl cursor-pointer'>
+    <i class='fa-solid fa-user'></i>
+  </div>
+</header>
