@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import Logo from "../assets/LOGO.png";
+---
+
+<footer>
+  <div class='grid md:grid-flow-col grid-flow-row text-bmPink1 p-4 md:pt-10'>
+    <div
+      class='text-center md:text-left flex flex-col md:flex-row gap-4 justify-center mb-2 md:mb-0'
+    >
+      <Image
+        src={Logo}
+        alt='barmates logo'
+        class='aspect-square w-[10dvh] hidden md:block'
+      />
+      <div class='mx-auto md:mx-0 md:my-auto'>
+        <h2
+          class='font-[Montserrat] font-black italic text-xl md:text-4xl flex'
+        >
+          {
+            ["B", "a", "r", "M", "a", "t", "e", "s"].map((letter) => {
+              return (
+                <span class='hover:text-bmBlue1 duration-300 ease-in-out'>
+                  {letter}
+                </span>
+              );
+            })
+          }
+        </h2>
+        <p class='font-semibold'>Zurich, Switzerland</p>
+      </div>
+    </div>
+    <div
+      class='grid md:grid-flow-col grid-flow-row text-lg text-center md:text-left'
+    >
+      <div class='my-2 md:my-0'>
+        <h1 class='font-bold font-[Montserrat]'>Founders</h1>
+        <ul class='font-semibold text-bmPink2'>
+          <li>
+            <a href='https://instagram.com/marking27'>Marko</a>
+          </li>
+          <li>
+            <a href='https://instagram.com/nevillebrem'>Neville</a>
+          </li>
+        </ul>
+      </div>
+      <div class='my-2 md:my-0'>
+        <h1 class='font-bold font-[Montserrat]'>Social</h1>
+        <ul class='font-semibold text-bmPink2'>
+          <li>
+            <a href='https://instagram.com/barmates_official'>Instagram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div
+    class='text-center py-1 border-t border-bmPink4 font-bold font-[Montserrat] text-bmPink1'
+  >
+    <a href='https://github.com/nevthereal/barmates'>© Neville Brem 2023</a>
+  </div>
+</footer>
