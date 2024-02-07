@@ -8,19 +8,17 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import Hero from "../components/Hero";
 ---
 
-<BaseLayout title='BarMates'>
+<BaseLayout title='Home'>
   <!-- Hero -->
   <Hero client:load />
 
   <!-- Founders -->
   <div
-    class='grid grid-rows-2 md:grid-rows-none md:grid-cols-2 text-bmBlue1'
+    class='grid grid-rows-2 md:grid-rows-none md:grid-cols-2 text-bmBlue-500'
     id='about'
   >
     <div class='flex flex-col justify-center p-2 md:p-8'>
-      <h1 class='mx-auto my-2 md:my-4 text-4xl font-black font-[Montserrat]'>
-        The Founders
-      </h1>
+      <h1 class='mx-auto my-2 md:my-4'>The Founders</h1>
       <Image
         src={Founders}
         alt='founders'
@@ -41,13 +39,11 @@ import Hero from "../components/Hero";
 
   <!-- Company -->
   <div
-    class='grid grid-rows-2 md:grid-rows-none md:grid-cols-2 text-bmPink1'
+    class='grid grid-rows-2 md:grid-rows-none md:grid-cols-2 text-bmPink-500'
     id='about'
   >
     <div class='flex flex-col justify-center p-2 md:p-8'>
-      <h1 class='mx-auto my-2 md:my-4 text-4xl font-black font-[Montserrat]'>
-        The Company
-      </h1>
+      <h1 class='mx-auto my-2 md:my-4'>The Company</h1>
       <Image
         src={Bar}
         alt='founders'
@@ -57,7 +53,7 @@ import Hero from "../components/Hero";
     <div class='p-8 flex'>
       <p class='my-auto text-lg md:text-xl'>
         <span
-          class='font-[Montserrat] font-bold hover:text-bmBlue1 duration-300'
+          class='font-[Montserrat] font-bold hover:text-bmBlue-500 duration-300'
         >
           BarMates
         </span>{" "}
@@ -67,3 +63,9 @@ import Hero from "../components/Hero";
     </div>
   </div>
 </BaseLayout>
+
+<style>
+  h1 {
+    @apply text-4xl;
+  }
+</style>

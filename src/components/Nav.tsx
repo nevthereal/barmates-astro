@@ -12,7 +12,14 @@ const Header = () => {
           whileTap={{ scale: 0.9 }}
         />
       </a>
-      <div className='md:text-2xl text-bmPink1 flex gap-2 md:gap-8 my-auto'>
+      <div className='md:text-2xl text-bmPink-500 flex gap-2 md:gap-8 my-auto'>
+        <motion.a
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 0.9 }}
+          href='/blog'
+        >
+          Blog
+        </motion.a>
         <motion.a
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}
@@ -20,16 +27,9 @@ const Header = () => {
         >
           Catalogue
         </motion.a>
-        <motion.a
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.9 }}
-          href='/mission'
-        >
-          Mission
-        </motion.a>
       </div>
       <motion.div
-        className='text-bmBlue1 text-3xl my-auto cursor-pointer'
+        className='text-bmBlue-500 text-3xl my-auto cursor-pointer'
         whileHover={{ scale: 1.1, rotate: 12 }}
         whileTap={{ scale: 0.9 }}
       >

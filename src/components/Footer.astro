@@ -19,7 +19,7 @@ const founders: founder[] = [
 ---
 
 <footer>
-  <div class='grid md:grid-flow-col grid-flow-row text-bmPink1 p-4 md:pt-10'>
+  <div class='grid md:grid-flow-col grid-flow-row text-bmPink-500 p-4 md:pt-10'>
     <div
       class='text-center md:text-left flex flex-col md:flex-row gap-4 justify-center mb-2 md:mb-0'
     >
@@ -29,13 +29,11 @@ const founders: founder[] = [
         class='aspect-square w-[10dvh] hidden md:block'
       />
       <div class='mx-auto md:mx-0 md:my-auto'>
-        <h2
-          class='font-[Montserrat] font-black italic text-xl md:text-4xl flex'
-        >
+        <h2 class='italic flex'>
           {
             ["B", "a", "r", "M", "a", "t", "e", "s"].map((letter) => {
               return (
-                <span class='hover:text-bmBlue1 duration-300 ease-in-out'>
+                <span class='hover:text-bmBlue-500 duration-300 ease-in-out'>
                   {letter}
                 </span>
               );
@@ -49,8 +47,8 @@ const founders: founder[] = [
       class='grid md:grid-flow-col grid-flow-row text-lg text-center md:text-left'
     >
       <div class='my-2 md:my-0'>
-        <h1 class='font-bold font-[Montserrat]'>Founders</h1>
-        <ul class='font-semibold text-bmPink2'>
+        <h1>Founders</h1>
+        <ul class='font-semibold text-bmPink-400'>
           {
             founders.map((founder) => {
               return (
@@ -69,8 +67,8 @@ const founders: founder[] = [
       </div>
     </div>
     <div class='my-2 md:my-0'>
-      <h1 class='font-bold font-[Montserrat]'>Social</h1>
-      <ul class='font-semibold text-bmPink2'>
+      <h1>Social</h1>
+      <ul class='font-semibold text-bmPink-400'>
         <li>
           <a href='https://instagram.com/barmates_official' target='_blank'
             >Instagram</a
@@ -81,7 +79,7 @@ const founders: founder[] = [
   </div>
 </footer>
 <div
-  class='text-center py-1 border-t border-bmPink4 font-bold font-[Montserrat] text-bmPink1'
+  class='text-center py-1 border-t border-bmPink-200 font-bold font-[Montserrat] text-bmPink-500'
 >
   <a href='https://github.com/nevthereal/barmates'>© Neville Brem 2023</a>
 </div>

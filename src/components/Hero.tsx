@@ -14,11 +14,11 @@ const Hero = () => {
         }}
         className='mx-auto my-auto'
       >
-        <h1 className='text-bmPink1 font-black text-6xl md:text-9xl font-[Montserrat]'>
+        <h1 className='text-bmPink-500 text-6xl md:text-9xl'>
           {"BarMates".split("").map((letter, index) => {
             return (
               <span
-                className='hover:text-bmBlue1 duration-300 ease-in-out'
+                className='hover:text-bmBlue-500 duration-300 ease-in-out'
                 key={index}
               >
                 {letter}
@@ -26,14 +26,14 @@ const Hero = () => {
             );
           })}
         </h1>
-        <p className='text-bmBlue1 font-bold text-base md:text-3xl'>
+        <p className='text-bmBlue-500 font-bold text-base md:text-3xl'>
           Innovative bars made in Switzerland
         </p>
       </motion.div>
       <motion.a
         whileTap={{ scale: 0.8 }}
         href='#about'
-        className='text-bmBlue1 mb-8 group mx-auto'
+        className='text-bmBlue-500 mb-8 group mx-auto'
       >
         <p className='md:text-xl font-bold duration-200'>Find out more!</p>
         <i className='fa-solid fa-chevron-down text-2xl md:text-4xl group-hover:translate-y-2 duration-200 ease-in-out'></i>
