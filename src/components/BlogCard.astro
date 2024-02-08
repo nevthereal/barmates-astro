@@ -2,14 +2,16 @@
 declare interface Props {
   title: string;
   publishDate: Date;
-  content: string;
+  slug: string;
+  author: string;
 }
 
-const { title, publishDate, content } = Astro.props;
+const { title, publishDate, slug, author } = Astro.props;
 ---
 
-<div class='card'>
+<a href={`${slug}`} class='card'>
   <h1 class='text-bmBlue-500 text-3xl'>{title}</h1>
+  <h3 class='text-bmBlue-500'>By {author}</h3>
   <h3 class='text-bmBlue-300'>
     {
       publishDate.toLocaleString([], {
@@ -17,7 +19,4 @@ const { title, publishDate, content } = Astro.props;
       })
     }
   </h3>
-  <p class='text-bmBlue-400 pt-4 font-bold'>
-    {content.substring(0, 20)}...
-  </p>
-</div>
+</a>

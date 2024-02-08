@@ -18,26 +18,18 @@ import BlogCard from "../../components/BlogCard.astro";
     </h1>
     <h2 class='text-bmBlue-400 font-semibold'>See what's happening</h2>
     <div class='grid grid-cols-3 gap-8 mt-8'>
-      <BlogCard
-        title='First post'
-        publishDate={new Date(2024, 0, 15)}
-        content='lorem impsum dolor sit amet'
-      />
-      <BlogCard
-        title='First post'
-        publishDate={new Date(2024, 2, 8)}
-        content='lorem impsum dolor sit amet'
-      />
-      <BlogCard
-        title='First post'
-        publishDate={new Date(2024, 5, 20)}
-        content='lorem impsum dolor sit amet'
-      />
-      <BlogCard
-        title='First post'
-        publishDate={new Date(2024, 8, 30)}
-        content='lorem impsum dolor sit amet'
-      />
+      <!-- {
+        posts.map((post) => {
+          return (
+            <BlogCard
+              title={post.frontmatter.title}
+              publishDate={post.frontmatter.pubDate}
+              slug={post.url!}
+              author={post.frontmatter.author}
+            />
+          );
+        })
+      } -->
     </div>
   </main>
 </BaseLayout>
