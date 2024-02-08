@@ -1,9 +1,27 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import BlogCard from "../components/BlogCard.astro";
 ---
 
 <BaseLayout title='Blog'>
-  <main class='px-16'>
-    <h1>Blog</h1>
+  <main class='px-32'>
+    <h1 class='flex text-4xl md:text-6xl text-bmBlue-500'>
+      {
+        "Blog".split("").map((letter) => {
+          return (
+            <span class='hover:text-bmPink-500 duration-300 ease-in-out'>
+              {letter}
+            </span>
+          );
+        })
+      }
+    </h1>
+    <h2 class='text-bmBlue-400 font-semibold'>See what's happening</h2>
+    <div class='grid grid-cols-3 gap-8 mt-8'>
+      <BlogCard />
+      <BlogCard />
+      <BlogCard />
+      <BlogCard />
+    </div>
   </main>
 </BaseLayout>

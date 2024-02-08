@@ -1,12 +1,12 @@
-import Bar from "../assets/BAR.png";
+import Logo from "../assets/LOGO.png";
 import { motion } from "framer-motion";
 
 const Header = () => {
   return (
-    <header className='flex justify-between p-2 md:p-4 bg-white uppercase font-black font-[Montserrat] h-[10dvh]'>
-      <a href='/' className='w-[12dvh] my-auto'>
+    <header className='flex justify-between p-6 bg-white uppercase font-black font-[Montserrat]'>
+      <a href='/' className='w-[7dvh] my-auto'>
         <motion.img
-          src={Bar.src}
+          src={Logo.src}
           alt='bar'
           whileHover={{ scale: 1.1, rotate: 12 }}
           whileTap={{ scale: 0.9 }}
@@ -33,7 +33,7 @@ const Header = () => {
         whileHover={{ scale: 1.1, rotate: 12 }}
         whileTap={{ scale: 0.9 }}
       >
-        <i className='fa-solid fa-question-mark'></i>
+        <i className='fa-solid fa-question'></i>
       </motion.div>
     </header>
   );
