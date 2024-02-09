@@ -3,5 +3,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 ---
 
 <BaseLayout title='Catalogue'>
-  <h1>Catalogue</h1>
+  <div class='h-[75dvh] w-screen flex'>
+    <div
+      class='m-auto text-center hover:scale-105 duration-150 ease-in-out active:scale-100'
+    >
+      <h1 class='font-black font-[Montserrat] text-4xl text-bmBlue-500 group'>
+        This page is currently under{" "}
+        <span class='text-bmPink-500 italic'>
+          construction{" "}
+          <i
+            class='fa-solid fa-hammer group-hover:rotate-[25deg] duration-150 ease-in-out'
+          ></i>
+        </span>
+      </h1>
+    </div>
+  </div>
 </BaseLayout>
