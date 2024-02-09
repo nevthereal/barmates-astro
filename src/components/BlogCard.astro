@@ -9,7 +9,7 @@ declare interface Props {
 const { title, publishDate, slug, author } = Astro.props;
 ---
 
-<a href={`${slug}`} class='card'>
+<a href={`blog/${slug}`} class='card'>
   <h1 class='text-bmBlue-500 text-3xl'>{title}</h1>
   <h3 class='text-bmBlue-500'>By {author}</h3>
   <h3 class='text-bmBlue-300'>

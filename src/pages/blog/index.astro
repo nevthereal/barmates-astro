@@ -1,6 +1,8 @@
 ---
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogCard from "../../components/BlogCard.astro";
+import { getCollection } from "astro:content";
+const posts = await Astro.glob("./*.md");
 ---
 
 <BaseLayout title='Blog'>
@@ -18,7 +20,7 @@ import BlogCard from "../../components/BlogCard.astro";
     </h1>
     <h2 class='text-bmBlue-400 font-semibold'>See what's happening</h2>
     <div class='grid grid-cols-3 gap-8 mt-8'>
-      <!-- {
+      {
         posts.map((post) => {
           return (
             <BlogCard
@@ -29,7 +31,7 @@ import BlogCard from "../../components/BlogCard.astro";
             />
           );
         })
-      } -->
+      }
     </div>
   </main>
 </BaseLayout>
