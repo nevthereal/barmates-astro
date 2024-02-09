@@ -29,11 +29,11 @@ const Header = () => {
         </motion.a>
       </div>
       <motion.div
-        className='text-bmBlue-500 text-3xl my-auto cursor-pointer'
+        className='text-gray-300 cursor-not-allowed text-3xl my-auto'
         whileHover={{ scale: 1.1, rotate: 12 }}
         whileTap={{ scale: 0.9 }}
       >
-        <i className='fa-solid fa-question'></i>
+        <i className='fa-solid fa-shop'></i>
       </motion.div>
     </header>
   );
