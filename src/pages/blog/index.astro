@@ -6,7 +6,7 @@ const posts = await Astro.glob("./*.md");
 ---
 
 <BaseLayout title='Blog'>
-  <main class='px-16 md:px-32'>
+  <main class='max-w-[90%] mx-auto'>
     <h1 class='flex text-4xl md:text-6xl text-bmBlue-500'>
       {
         "Blog".split("").map((letter) => {
