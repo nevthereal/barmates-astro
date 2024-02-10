@@ -12,7 +12,7 @@ const Header = () => {
           whileTap={{ scale: 0.9, rotate: 0 }}
         />
       </a>
-      <div className='md:text-2xl text-bmPink-500 flex gap-2 md:gap-8 my-auto'>
+      <div className='md:text-2xl text-secondary flex gap-2 md:gap-8 my-auto'>
         <motion.a
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

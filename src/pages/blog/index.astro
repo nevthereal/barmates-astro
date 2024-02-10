@@ -10,18 +10,18 @@ posts.sort((a, b) => {
 
 <BaseLayout title='Blog'>
   <main class='max-w-[90%] mx-auto'>
-    <h1 class='flex text-4xl md:text-6xl text-bmBlue-500'>
+    <h1 class='flex text-4xl md:text-6xl text-primary'>
       {
         "Blog".split("").map((letter) => {
           return (
-            <span class='hover:text-bmPink-500 duration-300 ease-in-out'>
+            <span class='hover:text-secondary duration-300 ease-in-out'>
               {letter}
             </span>
           );
         })
       }
     </h1>
-    <h2 class='text-bmBlue-400 font-semibold'>See what's happening</h2>
+    <h2 class='text-primary font-semibold'>See what's happening</h2>
     <div class='md:grid md:grid-cols-3 md:gap-8 mt-8'>
       {
         posts.map((post) => {
