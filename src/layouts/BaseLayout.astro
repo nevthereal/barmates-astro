@@ -1,6 +1,6 @@
 ---
-import Nav from "../components/Nav";
-import Footer from "../components/Footer.astro";
+import Nav from "../components/Nav.svelte";
+import Footer from "../components/Footer.svelte";
 const { title } = Astro.props;
 ---
 
@@ -22,7 +22,7 @@ const { title } = Astro.props;
     <title>BarMates - {title}</title>
   </head>
   <body>
-    <Nav client:load />
+    <Nav />
     <slot />
     <Footer />
   </body>
@@ -54,9 +54,5 @@ const { title } = Astro.props;
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: top;
-  }
-
-  .card {
-    @apply border-2 p-8 rounded-2xl border-primary bg-primary/25;
   }
 </style>

@@ -5,12 +5,34 @@ import Founders from "../assets/FOUNDERS.jpeg";
 import Bar from "../assets/BAR.png";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
-import Hero from "../components/Hero";
 ---
 
 <BaseLayout title='Home'>
   <!-- Hero -->
-  <Hero client:load />
+  <div class='h-[90dvh] hero flex flex-col text-center'>
+    <div class='mx-auto my-auto'>
+      <h1 class='text-secondary flex justify-center'>
+        {
+          "BarMates".split("").map((letter, index) => {
+            return (
+              <span class='hover:text-primary duration-300 ease-in-out text-6xl md:text-9xl'>
+                {letter}
+              </span>
+            );
+          })
+        }
+      </h1>
+      <p class='text-primary font-bold text-sm md:text-3xl'>
+        Innovative bars made in Switzerland
+      </p>
+    </div>
+    <a href='#about' class='text-primary mb-8 group mx-auto'>
+      <p class='md:text-xl font-bold duration-200'>Find out more!</p>
+      <i
+        class='fa-solid fa-chevron-down text-2xl md:text-4xl group-hover:translate-y-2 duration-200 ease-in-out'
+      ></i>
+    </a>
+  </div>
 
   <!-- Founders -->
   <div
