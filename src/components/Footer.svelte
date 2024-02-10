@@ -49,11 +49,18 @@
       </div>
 
       <div>
-        <h1>Social</h1>
+        <h1>Links</h1>
         <ul class="font-semibold text-secondary">
           <li>
             <a href="https://instagram.com/barmates_official" target="_blank"
               >Instagram</a
+            >
+          </li>
+          <li><span class="text-gray-300">Store</span></li>
+          <li>
+            <a
+              href="https://github.com/nevthereal/barmates-astro"
+              target="_blank">Open Source</a
             >
           </li>
         </ul>
