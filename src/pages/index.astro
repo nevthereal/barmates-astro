@@ -1,8 +1,7 @@
 ---
-import { Image } from "astro:assets";
-
 import Founders from "../assets/FOUNDERS.jpeg";
 import Bar from "../assets/BAR.png";
+import Eljas from "../assets/ELJAS.jpg";
 
 import BaseLayout from "../layouts/BaseLayout.astro";
 ---
@@ -41,21 +40,32 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   >
     <div class='flex flex-col justify-center p-2 md:p-8'>
       <h1 class='mx-auto my-2 md:my-4'>The Founders</h1>
-      <Image
-        src={Founders}
-        alt='founders'
-        class='rounded-3xl w-[75%] md:w-[50%] mx-auto'
-      />
+      <div class='carousel rounded-3xl w-[75%] md:w-[50%] mx-auto'>
+        <div class='carousel-item w-full'>
+          <img src={Founders.src} alt='founders' />
+        </div>
+        <div class='carousel-item w-full'>
+          <img src={Eljas.src} alt='founders' />
+        </div>
+      </div>
     </div>
-    <div class='p-8 flex'>
-      <p class='my-auto text-lg md:text-xl'>
-        We (Marko and Neville) are two 16 year old students from Zurich,
-        Switzerland. We are rowing athletes at the Belvoir Rowing Club Zurich.
-        We love protein and energy bars. <br />
-        While Marko is busy building our reach and community, Neville is doing all
-        the design work and logistics for the business, like package designing, manufacture
-        of the bars or web designing.
-      </p>
+    <div class='p-8 flex prose-p'>
+      <div class='my-auto text-lg md:text-xl prose'>
+        <p>
+          We, Marko and Neville, are two 16-year-old students from Zurich,
+          Switzerland. We are rowers at Belvoir Rowing Club Zurich. We love
+          Protein and energy bars.
+        </p>
+        <p>
+          While Marko is busy building our reach, community and marketing,
+          Neville is responsible for Neville is responsible for design and
+          software development.
+        </p>
+        <p>
+          Eljas is the newest member of our team. His skills are strategic
+          thinking and is responsible for logistical and legal decisions.
+        </p>
+      </div>
     </div>
   </div>
 
@@ -66,21 +76,19 @@ import BaseLayout from "../layouts/BaseLayout.astro";
   >
     <div class='flex flex-col justify-center p-2 md:p-8'>
       <h1 class='mx-auto my-2 md:my-4'>The Company</h1>
-      <Image
-        src={Bar}
-        alt='founders'
-        class='rounded-3xl w-[75%] md:w-[50%] mx-auto'
-      />
+      <img src={Bar.src} alt='founders' class='w-[75%] md:w-[50%] mx-auto' />
     </div>
     <div class='p-8 flex'>
-      <p class='my-auto text-lg md:text-xl'>
+      <p class='my-auto text-lg md:text-xl prose'>
         <span
           class='font-[Montserrat] font-bold hover:text-primary duration-300'
         >
           BarMates
         </span>{" "}
-        was founded 2023 in Zurich, Switzerland. We figured, that there were no 'perfect'
-        bars, so we went ahead and created our own.
+        was founded in 2023 in Zurich, Switzerland. Our mission is to create the
+        perfect and healthy energy bar. Find out more on our <a href='/mission'
+          >mission</a
+        > page
       </p>
     </div>
   </div>
