@@ -2,6 +2,10 @@
 import BaseLayout from "../../layouts/BaseLayout.astro";
 import BlogCard from "../../components/BlogCard.astro";
 const posts = await Astro.glob("./*.md");
+
+posts.sort((a, b) => {
+  return Date.parse(a.frontmatter.pubDate) - Date.parse(b.frontmatter.pubDate);
+});
 ---
 
 <BaseLayout title='Blog'>
