@@ -3,7 +3,7 @@
 </script>
 
 <header
-  class="flex justify-between p-6 bg-white uppercase font-black font-[Montserrat]"
+  class="flex justify-between p-6 bg-white uppercase font-black font-[Grandstander]"
 >
   <a
     href="/"

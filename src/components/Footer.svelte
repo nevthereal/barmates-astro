@@ -18,26 +18,26 @@
 </script>
 
 <footer>
-  <div class="grid md:grid-flow-col grid-flow-row text-secondary p-4 md:pt-10">
+  <div class="grid md:grid-flow-col grid-flow-row text-primary p-4 md:pt-10">
     <div
-      class="text-center md:text-left flex flex-col md:flex-row gap-4 justify-center mb-2 md:mb-0"
+      class="text-center md:text-left flex flex-col md:flex-row gap-8 justify-center mb-2 md:mb-0"
     >
-      <img src={Bar.src} alt="barmates logo" class="h-32 hidden md:block" />
+      <img src={Bar.src} alt="barmates logo" class="h-24 hidden md:block" />
       <div class="mx-auto md:mx-0 md:my-auto">
-        <h1 class="flex text-4xl md:text-6xl">
+        <h1 class="flex text-4xl md:text-6xl text-secondary">
           {#each "BarMates".split("") as letter}
             <span class="hover:text-primary duration-300 ease-in-out">
               {letter}
             </span>
           {/each}
         </h1>
-        <p class="font-semibold">Zurich, Switzerland</p>
+        <h2 class="text-secondary">Zurich, Switzerland</h2>
       </div>
     </div>
     <div class="grid grid-flow-col text-lg justify-center gap-16">
       <div>
         <h1>Founders</h1>
-        <ul class="font-semibold text-secondary">
+        <ul class="font-semibold text-primary">
           {#each founders as founder}
             <li>
               <a href={`https://instagram.com/${founder.link}`} target="_blank">
@@ -50,7 +50,7 @@
 
       <div>
         <h1>Links</h1>
-        <ul class="font-semibold text-secondary">
+        <ul class="font-semibold text-primary">
           <li>
             <a href="https://instagram.com/barmates_official" target="_blank"
               >Instagram</a
@@ -69,7 +69,7 @@
   </div>
 </footer>
 <div
-  class="text-center py-1 border-t border-secondary font-bold font-[Montserrat] text-secondary"
+  class="text-center py-1 border-t border-secondary font-bold font-[Montserrat] text-primary"
 >
   <a href="https://github.com/nevthereal/barmates">© Neville Brem 2023</a>
 </div>

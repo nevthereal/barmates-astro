@@ -30,23 +30,17 @@ const { title } = Astro.props;
 
 <style is:global>
   @font-face {
-    font-family: Montserrat;
-    src: url(/fonts/Montserrat.ttf);
+    font-family: Grandstander;
+    src: url(/fonts/Grandstander.ttf);
   }
   html {
     @apply scroll-smooth;
   }
 
-  h1 {
-    @apply font-black font-[Montserrat];
-  }
-
-  h2 {
-    @apply font-bold font-[Montserrat];
-  }
-
+  h1,
+  h2,
   h3 {
-    @apply font-bold font-[Montserrat];
+    @apply font-black font-[Grandstander];
   }
 
   .hero {
