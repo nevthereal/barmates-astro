@@ -71,5 +71,5 @@
 <div
   class="text-center py-1 border-t border-secondary font-bold font-[Montserrat] text-primary"
 >
-  <a href="https://github.com/nevthereal/barmates">© Neville Brem 2023</a>
+  <a href="https://github.com/nevthereal/barmates">© BarMates 2024</a>
 </div>
