@@ -4,7 +4,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <BaseLayout title={`Blog ${frontmatter.title}`}>
-  <main class='mt-16 mx-6 md:mx-auto prose'>
+  <article class='mt-16 mx-6 md:mx-auto prose'>
     <slot />
-  </main>
+  </article>
 </BaseLayout>
